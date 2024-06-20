@@ -7,6 +7,7 @@ import {useDispatch} from "react-redux";
 import FetchButton from "./components/FetchButton";
 import ThunkComponent from "./components/ThunkComponent";
 import SagaButton from "./components/SagaButton";
+import ViewFromData from "./components/ViewFromData";
 
 function App() {
     const dispatch = useDispatch();
@@ -22,6 +23,7 @@ function App() {
             <FetchButton/>
             <ThunkComponent/>
             <SagaButton/>
+            <ViewFromData/>
         </div>
     );
 }
