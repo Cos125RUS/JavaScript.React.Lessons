@@ -8,7 +8,7 @@ function* fetchData(action) {
                 setTimeout(() => resolve("Data Loaded"), 1000))
                 .then(res => data = res);
         }, action.payload.id);
-        // yield delay(2000);
+        yield delay(500);
         yield put({type: 'DATA_LOADED', payload: data});
     } catch (e) {
         yield put({type: 'LOAD_DATA_FAILED', message: e.message});
